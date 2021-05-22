@@ -27,7 +27,6 @@ Most primitives (booleans numbers, undefined, null) are constant space.
 Strings require O(n) space where n is string length.
 Reference types (array and objects) where n is length for arrays and keys for objects, O(n) space is taken.
 
-
 Logarithms are the opposites of exponents
 
 Log_2(8) = 3 > 2^3=8
@@ -71,10 +70,3 @@ Inserting to the end of an array is O(1)
 Inserting  / removing in the beginning of an array is O(n), due to reindexing of the entire array.
 
 .push() / .pop() is more efficient than .shift() / .unshift()
-
-￼
-
-
-
-
-
