@@ -16,3 +16,19 @@ function averagePair(array, average){
   }
 
   console.log(averagePair([1,2,3], 2.5))
+
+/*
+input: sorted array, average
+
+if array.length < 2 return false
+
+let left = 0
+let right = array.length - 1
+
+loop through array, logic
+    if left + right === average > true
+    if left + right < average > left++
+    if left + right > average right --
+
+return false
+*/
