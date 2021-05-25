@@ -44,7 +44,7 @@ output integer, max consecutive subarray
 
 e.g.  [ 1, 1, 2, 3, 4, 4, 4, 5, 1, 2, 2, 2, 2, 3] >> 2
 
-an array of uniqe value would return the first element of the array
+an array of unique values would return the first element of the array
 
 O(n) time
 O(1) space
