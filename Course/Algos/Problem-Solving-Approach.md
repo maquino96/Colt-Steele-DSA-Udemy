@@ -3,7 +3,7 @@ Problem Solving Approach
 What is an Algorithm?
  - a process or set of steps to accomplish a certain task
 
-	1.	Devis a plan for solving problems
+	1.	Devise a plan for solving problems
 	2.	Master common problem solving patterns
 
 Understand the problem

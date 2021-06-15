@@ -3,6 +3,8 @@ function countUniqueValues(array){
     let p1 = 0
     let p2 = 1
     
+    if ( array.length === 0) { return 0}
+
     for (let i = 0; i < array.length; i++ ) {
         if (array[p1]===array[p2]) { 
             p2++}
