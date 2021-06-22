@@ -3,6 +3,9 @@ Binary Heaps
 Heaps are a type of tree
 Compare min and max heaps
 
+Tree > Heap > Binary Heap 
+
+
 Max Binary Heap, parents are always larger than the child.
 Min Binary Heap, parent nodes are smaller than the child
 No implied ordering between siblings
@@ -39,7 +42,7 @@ Priority Queue
 Big O of Binary Heaps
 Insertion: O(log n)
 Removal: O(log n)
-Search: O(n)
+Search: O(n) >> O(n)
 
 Useful data structure when you are frequently inserting and deleting nodes
   
