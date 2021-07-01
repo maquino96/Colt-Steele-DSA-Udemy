@@ -1,4 +1,12 @@
 function findUniquePairs(numbers, target) {
+
+    /* 
+    This problem tests for understanding of Data Structures + JS
+    Candidates should understand the use of queues + hash tables
+    -- knowing that hash tables / Maps in JS are not necessarily stored in order
+    
+    My approach also made use of a 'visited' array so that no pairs were repeated
+    */
     
     let hash = {}
     let result = []
