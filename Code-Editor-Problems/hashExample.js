@@ -18,18 +18,16 @@ let hashMap = {
 
 const searchArray = (arr, color) => {
 
-    for(let i = 0; i < array.length; i++){
-        console.log(array[i]);
-        if( array[i][0] === color) return array[i][1]
+    for(let i = 0; i < arr.length; i++){
+        console.log(arr[i]);
+        if( arr[i][0] === color) return arr[i][1]
     }
 
     return `The color: ${color} is not stored in this array`
 }
 
 console.log(searchArray(array, 'cyan'))
-// console.log(searchArray(array, 'white'))
+console.log(searchArray(array, 'lavender'))
 
-
-console.log('~~~~~~~~~~~~~~~~~~~~~')
 console.log(hashMap['cyan'])
-// console.log(hashMap['white'])
+console.log(hashMap['lavender'])
