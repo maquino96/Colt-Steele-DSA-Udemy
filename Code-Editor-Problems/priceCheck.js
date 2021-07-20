@@ -34,20 +34,4 @@ let sold = [7.50, 10, 4, 5, 6, 2.99, 2.99]
 
 console.log( priceCheck(products, productPrices, productSold, sold))
 
-// const activatedFountain = (n, locations) => {
-//     let map = {};
 
-//     for ( let i = 0; i < locations.length; i++){
-//         map[i] = [i]
-//     }
-
-//     for ( let j = 0; j < locations.length; j++){
-//         let spread = map[j]
-
-//         while ( spread >= 0 ) {
-
-//         }
-//         while ( spread <= )
-//     }
-    
-// }
