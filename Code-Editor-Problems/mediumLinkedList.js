@@ -46,9 +46,26 @@ class Node{
             curr = temp;
         }
 
-        this.head = prev
+        this.head = prev 
         this.print()
-        return
+        return // generally return prev (node) above 2 lines are for this example
+    }
+
+    remove( target, head=this.head ){
+        let dummy = new Node;
+        dummy.next = head;
+
+        let prev = dummy;
+        let curr = head;
+
+        while (curr !== null) {
+            if ( curr.val === target) prev.next = curr.next;
+            else prev = curr;
+            curr = curr.next    
+        }
+        this.head = dummy.next;
+        this.print()
+        return // generally return dummy.next
     }
 }
 
@@ -62,3 +79,5 @@ list.push(5)
 list.print()
 list.reverse()
 // list.print()
+
+list.remove(4)
