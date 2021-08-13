@@ -18,9 +18,9 @@ function pivot(arr, start=0, end=arr.length+1){
     swap(arr,start,swapIdx);
     console.log(arr)
     return swapIdx;
-  }
+}
   
-  // Version with ES2015 Syntax
+// Version with ES2015 Syntax
 //   function pivot(arr, start = 0, end = arr.length - 1) {
 //     const swap = (arr, idx1, idx2) => {
 //       [arr[idx1], arr[idx2]] = [arr[idx2], arr[idx1]];
@@ -70,7 +70,7 @@ function pivot(arr, start=0, end=arr.length+1){
 [0]
 */
 
-  function quickSort(arr, left = 0, right = arr.length -1){
+function quickSort(arr, left = 0, right = arr.length -1){
     if(left < right){
         let pivotIndex = pivot(arr, left, right) //3
         //left
