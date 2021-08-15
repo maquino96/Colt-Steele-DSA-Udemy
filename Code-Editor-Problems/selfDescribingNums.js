@@ -10,37 +10,38 @@ e.g. 2020 is a self describing number >> true
 */
 
 const selfDescribing = (num) => {
-    let arrNum = num.toString().split('')
+    let arrNum = num.toString()
 
-    let dictionary = {}
+
+    // use a map to store frequency of each number 
+    let d = {}
     for ( let i = 0; i < arrNum.length; i++){
-        dictionary[arrNum[i]] ? dictionary[arrNum[i]]++ : dictionary[arrNum[i]] = 1 
+        d[arrNum[i]] ? d[arrNum[i]]++ : d[arrNum[i]] = 1 
     }
 
-    let test = new Map
+    // iterate through the number, comparing the value at the index to the map value
+    for (let j = 0; j < arrNum.length; j++){
 
-    for ( let i = 0; i < arrNum.length; i++){
-        test.set(i, arrNum[i])
+
+        // if an index is not saved in the map, count is set to 0
+        let count = d[j.toString()] ? d[j.toString()] : 0
+
+        if (parseInt(arrNum[j]) === count) {
+            continue
+        } else { return false}
     }
-
-    console.log(test)
-
-    for (let i = 0; i < arrNum.length; i++){
-        // console.log(dictionary[i.toString()], parseInt(arrNum[i]))
-        // if ( !dictionary[i.toString()] === parseInt(arrNum[i]) || !dictionary[i.toString()]) return false 
-
-        console.log(test.get(i), arrNum[i])
-        if ( test.get(i) !== arrNum[i]) return false
-
-    }
-
     return true 
-
-
 }
 
+console.log(selfDescribing(2020)) //true
+console.log(selfDescribing(21200)) //true 
+console.log(selfDescribing(1210)) //true 
+console.log(selfDescribing(3211000)) //true
+console.log(selfDescribing(654)) //false
+console.log(selfDescribing(123)) //false
 
-// console.log(selfDescribing(2120))
+
+
 
 function isSelfDescribing(n) {
     let digits = String(n).split("");
@@ -68,9 +69,10 @@ function isSelfDescribing(n) {
     return true;
 }
 
-console.log(isSelfDescribing(2020))
-console.log(isSelfDescribing(21200))
-console.log(isSelfDescribing(1210))
-console.log(isSelfDescribing(3211000))
-console.log(isSelfDescribing(654))
-console.log(isSelfDescribing(123))
+// console.log(isSelfDescribing(2020))
+// console.log(isSelfDescribing(21200))
+// console.log(isSelfDescribing(1210))
+// console.log(isSelfDescribing(3211000))
+// console.log(isSelfDescribing(654))
+// console.log(isSelfDescribing(123))
+
