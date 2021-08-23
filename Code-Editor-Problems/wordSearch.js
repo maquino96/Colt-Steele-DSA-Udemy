@@ -1,10 +1,11 @@
 let grid = [
-    ["C","A","A"],
-    ["A","A","A"],
+    ["A","B","B"],
+    ["C","D","A"],
     ["B","C","D"]
+
 ]
 
-let word = 'AAB'
+let word = 'BACB'
 
 var exist = function(board, word) {
     
@@ -16,6 +17,8 @@ var exist = function(board, word) {
         if ( r < 0 || r >= maxRows || c < 0 || c >= maxColumns || grid[r][c] === 0) {return}
         
         console.log(r,c,str,result)
+
+        let temp = grid[r][c]
         
         if (str[0] === grid[r][c]){
             grid[r][c] = 0;
@@ -28,7 +31,11 @@ var exist = function(board, word) {
             dfs(r-1, c, str, grid);
             dfs(r, c+1, str, grid);
             dfs(r, c-1, str, grid);
+            
         }
+        
+        grid[r][c] = temp;
+        
     }
     
     for ( let i = 0; i < maxRows; i++){
