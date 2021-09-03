@@ -26,6 +26,5 @@ const fibDP = (n, memo = {}) => {
 
 console.log(fibDP(6))
 console.log(fibDP(7))
-
+//may still take sometime but much faster than the original
 console.log(fibDP(50))
-console.log(fibDP(1000))
