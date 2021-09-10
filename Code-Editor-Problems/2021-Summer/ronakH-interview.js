@@ -1,50 +1,50 @@
-// // // declare a variable called "numArr" which is an array containing the numbers 1, 2, and 3. then print it to the console
+// declare a variable called "numArr" which is an array containing the numbers 1, 2, and 3. then print it to the console
 
 let numArr = [1,2,3];
 
-// // console.log(numArr);
+// console.log(numArr);
 
 
-// // // define a function "multiplyBy2" that takes one number, multiplies it by 2, and returns that value
-// // function multiplyBy2(num){
-// //   return num*2;
+// // define a function "multiplyBy2" that takes one number, multiplies it by 2, and returns that value
+// function multiplyBy2(num){
+//   return num*2;
+// }
+
+// console.log(multiplyBy2(2));
+
+// define a function "distanceFrom10" that takes one number and returns its distance from 10. the output should be >= 0 (e.g. passing 8 or 12 should both return a positive 2)
+
+function distanceFrom10(num){
+  if(num > 10){
+    return num - 10;
+  }else{
+    return 10 -num;
+  }
+}
+
+// console.log(distanceFrom10(12));
+// console.log(distanceFrom10(8));
+
+// define a function "map" which takes two arguments, an array and a callback function. "map" will iterate/loop through the array and pass each array element to the callback as an argument. Each output from the callback is pushed to a new array. "map" will return this new array. Please do not use the native .map() method.
+
+function map(arr, cb){
+  let ans = [];
+  for(let i = 0; i < arr.length; i++){
+    ans.push(cb(arr[i]));
+  }
+  return ans;
+}
+
+// // function double(ele){
+// //   return ele * 2;
 // // }
 
-// // console.log(multiplyBy2(2));
+// // const double = (el) => el*2
 
-// // define a function "distanceFrom10" that takes one number and returns its distance from 10. the output should be >= 0 (e.g. passing 8 or 12 should both return a positive 2)
-
-// function distanceFrom10(num){
-//   if(num > 10){
-//     return num - 10;
-//   }else{
-//     return 10 -num;
-//   }
-// }
-
-// // console.log(distanceFrom10(12));
-// // console.log(distanceFrom10(8));
-
-// // define a function "map" which takes two arguments, an array and a callback function. "map" will iterate/loop through the array and pass each array element to the callback as an argument. Each output from the callback is pushed to a new array. "map" will return this new array. Please do not use the native .map() method.
-
-// function map(arr, cb){
-//   let ans = [];
-//   for(let i = 0; i < arr.length; i++){
-//     ans.push(cb(arr[i]));
-//   }
-//   return ans;
-// }
-
-// // // function double(ele){
-// // //   return ele * 2;
-// // // }
-
-// // // const double = (el) => el*2
-
-// // console.log(map([1,2,3,4],  double = (el) => el*2));
+// console.log(map([1,2,3,4],  double = (el) => el*2));
 
 
-// // use your "map" to find the distance from 10 of each number in numArr
+// use your "map" to find the distance from 10 of each number in numArr
 
 // console.log(map(numArr,distanceFrom10));
 
