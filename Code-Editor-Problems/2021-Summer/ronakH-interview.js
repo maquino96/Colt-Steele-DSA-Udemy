@@ -5,7 +5,7 @@ let numArr = [1,2,3];
 // console.log(numArr);
 
 
-// // define a function "multiplyBy2" that takes one number, multiplies it by 2, and returns that value
+// define a function "multiplyBy2" that takes one number, multiplies it by 2, and returns that value
 // function multiplyBy2(num){
 //   return num*2;
 // }
