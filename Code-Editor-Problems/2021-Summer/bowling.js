@@ -52,4 +52,4 @@ const bowlingLogic = (arr) => {
 
 }
 
-console.log(bowlingLogic(test))
+// console.log(bowlingLogic(test))
